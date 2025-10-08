@@ -12,7 +12,6 @@ class Discussion extends Model
 {
     use HasFactory, SoftDeletes;
     
-    // Kolom yang boleh diisi
     protected $fillable = [
         'course_id', 
         'user_id', 

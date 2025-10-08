@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Validator;
 
 class AssignmentController extends Controller
 {
-    // -----------------------------------------------------------
+  
     // 1. Dosen: Membuat Tugas Baru (POST /assignments)
-    // -----------------------------------------------------------
+  
     public function store(Request $request)
     {
         try {
@@ -69,9 +69,9 @@ class AssignmentController extends Controller
         }
     }
 
-    // -----------------------------------------------------------
+  
     // 2. Mahasiswa: Mengunggah Jawaban (POST /submissions)
-    // -----------------------------------------------------------
+  
     public function submit(Request $request)
     {
         try {
@@ -140,9 +140,9 @@ class AssignmentController extends Controller
         }
     }
 
-    // -----------------------------------------------------------
+  
     // 3. Dosen: Memberi Nilai (POST /submissions/{submission}/grade)
-    // -----------------------------------------------------------
+  
     public function grade(Request $request, Submission $submission)
     {
         try {

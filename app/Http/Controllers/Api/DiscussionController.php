@@ -12,9 +12,9 @@ use Illuminate\Support\Facades\Auth;
 
 class DiscussionController extends Controller
 {
-    // -----------------------------------------------------------
+    
     // 1. Dosen/Mahasiswa: Membuat Thread Diskusi Baru (POST /discussions)
-    // -----------------------------------------------------------
+    
     public function store(Request $request)
     {
         try {
@@ -61,9 +61,9 @@ class DiscussionController extends Controller
         }
     }
 
-    // -----------------------------------------------------------
+    
     // 2. Dosen/Mahasiswa: Membalas Thread Diskusi (POST /discussions/{discussion}/replies)
-    // -----------------------------------------------------------
+    
     public function reply(Request $request, Discussion $discussion)
     {
         try {

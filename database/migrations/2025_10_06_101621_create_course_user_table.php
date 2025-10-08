@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
        Schema::create('course_user', function (Blueprint $table) {
-        // Kita gunakan Foreign ID langsung sebagai kunci
+        // Foreign ID langsung sebagai kunci
         $table->foreignId('user_id')->constrained()->onDelete('cascade');
         $table->foreignId('course_id')->constrained()->onDelete('cascade');
         // Menjadikan kombinasi keduanya sebagai Primary Key

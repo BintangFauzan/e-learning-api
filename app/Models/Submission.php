@@ -9,8 +9,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Submission extends Model
 {
      use HasFactory;
-    
-    // Kolom yang boleh diisi (score diisi saat grading)
     protected $fillable = [
         'assignment_id', 
         'student_id', 

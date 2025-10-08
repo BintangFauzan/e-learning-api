@@ -12,9 +12,9 @@ use Illuminate\Support\Facades\Auth;
 
 class ReportController extends Controller
 {
-    // -----------------------------------------------------------
+    
     // 1. GET /reports/courses (Statistik Mahasiswa per Mata Kuliah)
-    // -----------------------------------------------------------
+    
     public function courseReport()
     {
         try {
@@ -38,9 +38,9 @@ class ReportController extends Controller
         }
     }
 
-    // -----------------------------------------------------------
+    
     // 2. GET /reports/assignments (Statistik Tugas: Dinilai/Belum Dinilai)
-    // -----------------------------------------------------------
+    
     public function assignmentReport()
     {
         try {
@@ -72,9 +72,9 @@ class ReportController extends Controller
         }
     }
 
-    // -----------------------------------------------------------
+    
     // 3. GET /reports/students/{id} (Statistik Tugas & Nilai Mahasiswa Tertentu)
-    // -----------------------------------------------------------
+    
     public function studentReport($id)
     {
         try {

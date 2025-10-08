@@ -10,8 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Reply extends Model
 {
      use HasFactory, SoftDeletes;
-    
-    // Kolom yang boleh diisi
+
     protected $fillable = [
         'discussion_id', 
         'user_id', 

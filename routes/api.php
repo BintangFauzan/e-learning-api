@@ -31,6 +31,7 @@ Route::post('courses/{course}/enroll', [CourseController::class, 'enroll']);
 Route::post('assignments', [AssignmentController::class, 'store']);             // Dosen: Buat Tugas
 Route::post('submissions', [AssignmentController::class, 'submit']);           // Mahasiswa: Unggah Jawaban
 Route::post('submissions/{submission}/grade', [AssignmentController::class, 'grade']); // Dosen: Beri Nilai
+
 //Rute untuk forum diskusi
 Route::post('discussions', [DiscussionController::class, 'store']);
 Route::post('discussions/{discussion}/replies', [DiscussionController::class, 'reply']);

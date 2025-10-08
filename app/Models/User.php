@@ -61,8 +61,6 @@ class User extends Authenticatable
 
      public function submissions(): HasMany
     {
-        // Satu Mahasiswa (User) bisa memiliki banyak Submission
-        // Laravel akan mencari 'user_id' atau 'student_id' di tabel submissions
         return $this->hasMany(Submission::class, 'student_id');
     }
 }
